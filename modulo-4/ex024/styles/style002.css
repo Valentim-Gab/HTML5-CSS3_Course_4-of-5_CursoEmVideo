@@ -1,0 +1,11 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+iframe {
+  display: block;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}

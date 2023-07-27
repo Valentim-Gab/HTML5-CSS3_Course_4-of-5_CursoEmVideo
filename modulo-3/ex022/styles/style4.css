@@ -1,0 +1,13 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
+  background-size: 100px;
+  height: 98vh;
+  border: 1px dashed #000;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+

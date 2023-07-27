@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: darkred;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+a:active {
+    color: yellow;
+    background-color: teal;
+}
+
+.especial::before {
+    content: '⇒ ';
+    text-decoration: none;
+    font-weight: normal;
+    color: gray;
+}
+
+.especial   ::after {
+    content: ' ⇐';
+    text-decoration: none;
+    font-weight: normal;
+    color: gray;
+}
+
+/*
+    #  = id;
+    .  = class;
+    :  = pseudo-class;
+    :: = pseudo element;
+    >  = children.
+*/

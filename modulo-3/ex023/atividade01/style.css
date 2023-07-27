@@ -1,0 +1,37 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background-color: #afaeae;
+}
+
+section {
+  margin: 50px;
+}
+
+section > table {
+  background-color: #e6caff;
+  width: 400px;
+  height: 200px;
+  border-collapse: collapse;
+  font-weight: bolder;
+  margin: 0 auto;
+}
+
+section > table > caption {
+  padding: 10px;
+  border: 2px solid #000;
+  border-bottom: none;
+  font-size: 1.5em;
+  background-color: #000;
+  color: aliceblue;
+}
+
+section > table td {
+  border: 2px solid #000;
+  padding: 10px;
+  text-align: center;
+}

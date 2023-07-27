@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de formulário</title>
+</head>
+<body>
+  <form action="register.php" method="POST">
+      <label for="user">Usuário: </label>
+      <input type="text" name="user" id="user" required minlength="5"
+          maxlength="30" size="10" placeholder="Nome" autocomplete="username">
+    </div>
+    <div>
+      <label for="password">Senha: </label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        minlength="8"
+        size="8"
+        placeholder="Senha"
+        autocomplete="current-password"
+      />
+    </div>
+    <button type="submit">Enviar</button>
+    <input type="reset" value="Limpar">
+  </form>
+</body>
+</html>

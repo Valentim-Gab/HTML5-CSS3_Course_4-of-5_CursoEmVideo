@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vídeo HTML5</title>
+</head>
+<body style="font-family: Verdana, Aria;" >
+    <header>
+        <h1>Vídeos</h1>
+    </header>
+
+    <section>
+        <div>
+            <h2>Vídeos hospedados localmente</h2>
+            <video src="media/rocket.mp4" controls width="500"></video>
+
+            <video controls width="700" poster="img/capa.webp">
+                <source src="media/rocket.mp4" type="video/mp4">
+                <!--
+                <source src="media/rocket.m4v" type="video/mp4">
+                <source src="media/rocket.webm" type="video/webm">
+                <source src="media/rocket.ogv" type="video/ogg">
+                -->
+                <p>
+                    Seu navegador não pode reproduzir esse vídeo 
+                    <a href="media/rocket.mp4">Clique aqui para baixar</a>
+                </p>
+            </video>
+        </div>
+        <hr/>
+        <div>
+            <h2>Vídeo do youtube</h2>
+
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/0nlNosXF7yI" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>
+
+<script src="script.js"></script>

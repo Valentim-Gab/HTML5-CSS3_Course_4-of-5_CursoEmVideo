@@ -1,0 +1,37 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  margin: 0 auto;
+  width: 700px;
+  border-collapse: collapse;
+  font-weight: bolder;
+}
+
+table caption {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 10px;
+}
+ 
+table td, table th {
+  border: 2px solid #000;
+  padding: 10px;
+}
+
+tbody td:first-child {
+  color: red;
+}
+
+.cnome {
+  background-color: aqua;
+}
+
+.cgrupo {
+  background-color: #ff0;
+}
+
+.cprof {
+  background-color: #e9ffcb;
+}

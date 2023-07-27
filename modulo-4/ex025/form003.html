@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <form action="register.php" method="get">
+    <legend>Formulário</legend>
+    <fieldset>
+      <div>
+        <label for="name">Nome: </label>
+        <input type="text" name="name" id="name" required maxlength="30"
+            placeholder="Nome completo" autocomplete="username">
+      </div>
+      <div>
+        <label for="media">Média</label>
+        <input type="number" name="media" id="media" min="0" max="10"
+            placeholder="0 a 10" step="0.5" required>
+      </div>
+      <div>
+        <label for="month">Periodo Letivo</label>
+        <input type="month" name="month" id="month" value="2023-07">
+      </div>
+      <div>
+        <label for="day">Dia da prova</label>
+        <input type="date" name="day" id="day" value="2023-07-20">
+      </div>
+      <div>
+        <label for="time">Horário da prova</label>
+        <input type="time" name="time" id="time">
+      </div>
+    </fieldset>
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+  </form>  
+</body>
+</html>

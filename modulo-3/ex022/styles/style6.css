@@ -1,0 +1,29 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  /*
+  background-color: #000;
+  background-image: url(../img/wallpaper002.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  */
+
+  /* Shorthand - background
+    color > image > position > repeat > [size]
+    > attachment
+  */
+
+  background: #000 url(../img/wallpaper002.jpg)
+    center center fixed;
+  background-size: cover;
+}
+
+main {
+  background-color: #fff;
+  width: 400px;
+  padding: 10px;
+  margin: auto;
+}

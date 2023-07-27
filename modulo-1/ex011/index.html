@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Imagem dinâmica</title>
+</head>
+<body style="font-family: Verdana, Aria;" >
+    <header>
+        <h1>Imagem dinâmica</h1>
+    </header>
+
+    <section>
+        <div>
+            <picture>
+                <!--<source media="(min-width: )" srcset="" type="image/">-->
+                <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+
+                <img src="images/foto-g.png" alt="foto grande">
+            </picture>
+        </div>
+        <hr/>
+        <div>
+            <h1>Reproduzindo áudio por HTML5</h1>
+
+            <audio src="media/piseiroRockLee.mp3" controls></audio>
+
+            <br>
+            
+            <audio preload="metadata" controls>
+                <source src="media/ezgod.mp3" type="audio/mpeg">
+                <!--<source src="media/ezgod.ogg" type="audio/ogg">
+                <source src="media/ezgod.wav" type="audio/wav">-->
+                <p>
+                    Infelizmente não é possível reproduzir o áudio. 
+                    <a href="media/ezgod.mp3">Clique aqui para baixar</a>
+                </p>
+            </audio>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+<script src="script.js"></script>

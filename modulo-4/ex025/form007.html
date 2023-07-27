@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+</head>
+<body>
+  <main>
+    <form action="register.php" method="POST">
+      <div>
+        <label for="state">Estado: </label>
+        <select name="state" id="state">
+          <option value="" selected>-- Escolha --</option>
+          <optgroup label="região sudeste">
+            <option value="rj">Rio de Janeiro</option>
+            <option value="sp">São Paulo</option>
+            <option value="es">Espírito Santo</option>
+          </optgroup>
+          <optgroup label="região sul">
+            <option value="rs">Rio Grande do Sul</option>
+            <option value="sc">Santa Catarina</option>
+            <option value="pr">Paraná</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <label for="profession">Profissão</label>
+        <input type="text" name="profession" id="profession" list="listProf">
+        <datalist id="listProf">
+          <option value="ADM">Administrador</option>
+          <option value="MED">Médico</option>
+          <option value="ADV">Advogado</option>
+          <option value="DEV">Desenvolvedor</option>
+          <option value="Teste"></option>
+          <option>Teste2</option>
+        </datalist>
+      </div>
+      <div>
+        <label for="message">Mensagem: </label><br/>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Sua mensagem aqui"
+        ></textarea>
+      </div>
+      <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

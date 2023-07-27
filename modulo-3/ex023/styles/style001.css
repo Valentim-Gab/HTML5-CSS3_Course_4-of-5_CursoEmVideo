@@ -1,0 +1,33 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  width: 400px;
+  height: 400px;
+  border-collapse: collapse;
+}
+
+tr.line {
+  background-color: rgba(177, 177, 177, 0.986);
+}
+
+tr.line > td {
+  vertical-align: bottom;
+}
+
+td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+td.data {
+  background-color: #ff0;
+  vertical-align: top;
+}
+
+td.num {
+  text-align: right;
+}

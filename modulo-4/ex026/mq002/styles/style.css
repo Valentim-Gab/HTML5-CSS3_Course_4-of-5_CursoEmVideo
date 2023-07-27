@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3b3bf8;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+h1 {
+  color: #f0f8ff;
+  text-shadow: 2px 2px 0px #000;
+  padding: 10px;
+}

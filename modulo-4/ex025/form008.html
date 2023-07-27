@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+</head>
+<body>
+  <h1>Digite dois números</h1>
+  <main>
+    <form action="register.php" method="POST">
+      <div>
+        <label for="n1">Número 1: </label>
+        <input
+          type="number"
+          name="n1"
+          id="n1"
+          min="0"
+          max="50"
+          required
+          oninput="equals.innerHTML = Number(n1.value) + Number(n2.value)"
+        />
+      </div>
+      <div>
+        <label for="n2">Número 2: </label>
+        <input
+          type="number"
+          name="n2"
+          id="n2"
+          min="0"
+          max="50"
+          required
+          oninput="equals.innerHTML = Number(n1.value) + Number(n2.value)"
+        />
+      </div>
+      <div>
+        <label for="equals">Soma: </label>
+        <output name="equals" id="equals">0</output>
+      </div>
+      <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

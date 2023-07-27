@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Exemplo de formulário</h1>
+
+  <form action="register.php" method="GET">
+    <fieldset>
+      <legend>Dados do usuário</legend>
+      <div>
+        <label for="name">Nome: </label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div>
+        <label for="phone">Telefone: </label>
+        <input type="tel" name="phone" id="phone" required
+          pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+      </div>
+    </fieldset>
+    <div>
+      <button type="submit">Enviar</button>
+      <button type="reset">Clear</button>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+</head>
+<body>
+  <h1>Digite dois números</h1>
+  <main>
+    <form action="register.php" method="POST">
+      <div>
+        <label for="year">Em que ano você nasceu? </label>
+        <input type="number" name="year" id="year" min="1900" max="2023"
+        oninput="getAge()">
+      </div>
+      <div>
+        <label for="age">Sua idade é: </label>
+        <output id="age">0</output>
+      </div>
+      <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+  </main>
+
+  <script>
+    function getAge() {
+      let current = new Date().getFullYear()
+
+      age.innerHTML = Number(current) - Number(year.value)
+    }
+  </script>
+</body>
+</html>

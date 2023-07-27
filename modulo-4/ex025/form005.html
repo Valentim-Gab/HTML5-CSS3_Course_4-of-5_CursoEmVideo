@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <main>
+    <form action="register.php" method="POST">
+      <fieldset>
+        <legend>sexo</legend>
+        <div>
+          <label for="male">Masculino</label>
+          <input type="radio" name="sex" id="male">
+        </div>
+        <div>
+          <label for="female">Feminino</label>
+          <input type="radio" name="sex" id="female" checked>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Esportes favoritos</legend>
+        <div>
+          <label for="basket">Basquete</label>
+          <input type="checkbox" name="basket" id="basket">
+        </div>
+        <div>
+          <label for="futebol">Futebol</label>
+          <input type="checkbox" name="futebol" id="futebol" checked>
+        </div>
+        <div>
+          <label for="tenis">Tênis</label>
+          <input type="checkbox" name="tenis" id="tenis">
+        </div>
+        <div>
+          <label for="natacao">Natação</label>
+          <input type="checkbox" name="natacao" id="natacao">
+        </div>
+      </fieldset>
+      <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

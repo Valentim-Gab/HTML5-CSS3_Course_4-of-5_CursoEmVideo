@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+</head>
+<body>
+  <h1>Digite dois números</h1>
+  <main>
+    <form action="register.php" method="POST">
+      <div>
+        <label for="num">Número: </label>
+        <input type="range" name="num" id="num" min="0" max="10" value="5"
+        oninput="val.innerHTML = Number(num.value)">
+        <output id="val">5</output>
+      </div>
+      <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

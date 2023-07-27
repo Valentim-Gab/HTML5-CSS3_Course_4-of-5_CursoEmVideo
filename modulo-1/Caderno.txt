@@ -1,0 +1,26 @@
+Módulo 1
+
+Configurações do VSCODE
+
+WordWrap
+
+Sites com imagens free:
+	-https://unsplash.com
+	-https://www.pexels.com/pt-br/
+	-https://pt.pngtree.com
+	-https://www.pngwing.com
+	-https://br.freepik.com
+	-https://www.rawpixel.com
+	-https://pixabay.com/pt/
+	-https://libreshot.com
+	-https://commons.wikimedia.org/wiki/Category:Images
+	-https://favicon.io
+
+Ferramente de vídeo:
+	-https://handbrake.fr
+
+Vídeos privados incorporados:
+	-https://vimeo.com/pt-br/upgrade?vcid=33579&utm_medium=cpc&utm_source=google&gclid=CjwKCAjw46CVBhB1EiwAgy6M4mKrDqwRYCS0n1Qt7wClPjwoJlY055jvjehhOHzIlEufD9FkhAtwoRoC-LQQAvD_BwE&gclsrc=aw.ds
+
+Aula parada: 
+https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-6-aula-1-voce-tem-o-direito-de-usar-qualquer-imagem-no-seu-site/
