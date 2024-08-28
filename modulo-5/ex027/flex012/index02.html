@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexible Box</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: white;
+      min-height: 100vh;
+    }
+
+    main {
+      min-height: 100vh;
+      width: 100%;
+      padding: 2rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    .container {
+      background-color: skyblue;
+      display: flex;
+      flex-flow: row nowrap;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+    div.item {
+      background-color: rgb(120, 62, 173);
+      min-height: 200px;
+      padding: 0.25rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      color: aliceblue;
+      font-weight: bold;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div.item-1 {
+      /* 
+        Valor padrão 
+        flex: 0 1 auto; 
+      */
+
+      flex: initial;
+    }
+
+    div.item-2 {
+      /* flex: 0 0 auto; */
+      flex: none;
+    }
+
+    div.item-3 {
+      /* flex: 1 1 auto; */
+      flex: auto;
+    }
+
+    div.item-4 {
+      /* flex: 5 1 auto; */
+      flex: 5;
+    }
+
+    div.item-5 {
+      /* flex: 3 1 auto; */
+      flex: 3;
+    }
+
+    div.item-6 {
+      /* flex: 2 1 auto; */
+      flex: 2;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="container container-1">
+      <div class="item item-1">A</div>
+      <div class="item item-2">B</div>
+      <div class="item item-3">C</div>
+    </section>
+
+    <section class="container container-1">
+      <div class="item item-4">D</div>
+      <div class="item item-5">E</div>
+      <div class="item item-6">F</div>
+    </section>
+  </main>
+</body>
+</html>
