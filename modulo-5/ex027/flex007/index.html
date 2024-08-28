@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexible Box</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: white;
+      min-height: 100vh;
+    }
+
+    main {
+      min-height: 100vh;
+      width: 100%;
+      padding: 2rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    .container {
+      background-color: skyblue;
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      gap: 1rem;
+      transition: 0.4s ease-in-out;
+    }
+
+    div.item {
+      background-color: rgb(120, 62, 173);
+      max-width: 200px;
+      height: 200px;
+      width: 100%;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      color: aliceblue;
+      font-weight: bold;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: 0.4s ease-in-out;
+    }
+
+    div.item-1 {
+      order: 3;
+    }
+
+    div.item-2 {
+      order: 4;
+      background-color: brown;
+    }
+
+    div.item-3 {
+      order: 1;
+      background-color: darkgoldenrod;
+    }
+
+    div.item-4 {
+      order: 2;
+      background-color: black;
+    }
+
+    div.item-5 {
+      order: 0;
+      background-color: darkred;
+    }
+
+    div.item-6 {
+      order: 0;
+      background-color: darkslategray;
+    }
+
+    div.item-7 {
+      order: 5;
+      background-color: darkblue;
+    }
+
+    @media screen and (max-width: 768px) {
+      div.item-1 {
+        order: 0;
+      }
+  
+      div.item-2 {
+        order: 0;
+      }
+  
+      div.item-3 {
+        order: 0;
+      }
+  
+      div.item-4 {
+        order: 0;
+      }
+  
+      div.item-5 {
+        order: 0;
+      }
+  
+      div.item-6 {
+        order: 0;
+      }
+  
+      div.item-7 {
+        order: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="container container-1">
+      <div class="item item-1">A</div>
+      <div class="item item-2">B</div>
+      <div class="item item-3">C</div>
+      <div class="item item-4">D</div>
+      <div class="item item-5">E</div>
+      <div class="item item-6">F</div>
+      <div class="item item-7">G</div>
+    </section>
+  </main>
+</body>
+</html>
