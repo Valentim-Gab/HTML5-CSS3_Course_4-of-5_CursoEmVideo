@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout na prática</title>
+
+  <style>
+    main.container {
+      border: 3px solid blue;
+      height: 250px;
+
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      grid-template-rows: auto auto;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    div.item {
+      border: 3px solid red;
+      padding: 8px;
+    }
+
+    .c {
+      grid-column-start: 4;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item c">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+    <div class="item">G</div>
+    <div class="item">H</div>
+  </main>
+</body>
+</html>
