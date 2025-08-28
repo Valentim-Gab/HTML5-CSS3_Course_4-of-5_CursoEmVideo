@@ -8,7 +8,55 @@
   --fundo-card
 */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #0077ff;
+  --primary-light: #66bbff;
+  --background: #f5f5f5;
+  --background-inverse: #222;
+  --foreground: #222;
+  --foreground-inverse: #fff;
+  --card: #fff;
+}
+
 body {
-  background: lightgray;
-  color: darkblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5em;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+header {
+  background-color: var(--primary);
+  color: var(--foreground);
+  padding: 8px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+
+nav#menu ul li a {
+  color: var(--foreground-inverse);
+  font-weight: 600;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+nav#menu ul li a:hover {
+  background-color: var(--primary-light);
+  color: var(--primary);
 }
