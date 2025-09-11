@@ -60,3 +60,56 @@ nav#menu ul li a:hover {
   background-color: var(--primary-light);
   color: var(--primary);
 }
+
+main {
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+section#sheet {
+  background-color: var(--card);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  grid-column: 2;
+}
+
+section#sheet img.photo {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 6px solid var(--card);
+  outline: 4px solid var(--primary);
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+section#sheet h1 {
+  color: var(--primary);
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+div#social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+div#social a {
+  color: var(--primary);
+  transition: color 0.4s;
+}
+
+div#social a:hover {
+  color: var(--primary-light);
+  cursor: pointer;
+}
