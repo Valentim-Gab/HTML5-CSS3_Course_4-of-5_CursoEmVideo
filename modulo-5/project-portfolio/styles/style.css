@@ -127,7 +127,8 @@ article {
 
 article h2 {
   color: var(--primary);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.2em;
 }
 
 article#video .video-container {
@@ -141,4 +142,47 @@ article#video .video-container {
   height: 100%;
   border: none;
   border-radius: 8px;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .skill-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skill-container .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-container .name {
+  font-weight: bold;
+  color: var(--foreground);
+}
+
+.skill-container .percentage {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.skill-container .bar {
+  width: 100%;
+  height: 0.5em;
+  background-color: var(--background);
+  border-radius: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.skill-container .bar .progress {
+  height: 100%;
+  background-color: var(--primary-light);
+  border-radius: 0.25rem;
 }
