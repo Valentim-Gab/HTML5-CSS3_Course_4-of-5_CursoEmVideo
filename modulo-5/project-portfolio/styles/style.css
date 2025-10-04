@@ -150,12 +150,6 @@ article#video .video-container {
   gap: 2rem;
 }
 
-@media screen and (min-width: 768px) {
-  .skill-container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .skill-container .info {
   display: flex;
   justify-content: space-between;
@@ -185,4 +179,46 @@ article#video .video-container {
   height: 100%;
   background-color: var(--primary-light);
   border-radius: 0.25rem;
+}
+
+#studies-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+#studies-container .course {
+  background-color: var(--background);
+  border-radius: 0.5rem;
+  border-left: 0.25rem solid var(--primary-light);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  transition: border-left-width 0.4s, border-color 0.4s;
+}
+
+#studies-container .course:hover {
+  border-left-width: 1rem;
+  border-color: var(--primary);
+  cursor: pointer;
+}
+
+#studies-container .period {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--foreground);
+}
+
+#studies-container .institution {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin: 0.25rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .skill-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
