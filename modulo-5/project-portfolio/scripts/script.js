@@ -6,8 +6,8 @@ const storedTheme = localStorage.getItem('theme')
 themeDark(storedTheme === 'dark')
 
 // Função para alternar entre theme light e dark
-const themeDark = (tipo) => {
-  if (tipo) {
+function themeDark(type) {
+  if (type) {
     body.classList.add('dark')
     btn.innerHTML = '<i class="fa-solid fa-sun"></i>'
 

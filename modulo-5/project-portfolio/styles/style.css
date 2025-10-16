@@ -38,15 +38,18 @@ header {
   background-color: var(--primary);
   color: var(--foreground);
   padding: 8px;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav#menu ul {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 
@@ -58,7 +61,7 @@ nav#menu ul li a {
   transition: background-color 0.4s, color 0.4s;
 }
 
-nav#menu ul li a:hover {
+nav#menu ul li a:hover, nav#menu ul li #btn-theme:hover {
   background-color: var(--primary-light);
   color: var(--primary);
 }
