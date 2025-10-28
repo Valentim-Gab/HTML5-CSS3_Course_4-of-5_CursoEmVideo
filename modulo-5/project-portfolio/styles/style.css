@@ -37,7 +37,7 @@ body {
 header {
   background-color: var(--primary);
   color: var(--foreground);
-  padding: 8px;
+  padding: 2px 8px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -53,7 +53,14 @@ nav#menu ul {
   gap: 8px;
 }
 
-nav#menu ul li a {
+nav#menu ul li #btn-theme {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+nav#menu ul li a,
+nav#menu ul li #btn-theme {
   color: var(--foreground-inverse);
   font-weight: 600;
   padding: 12px 16px;
@@ -61,7 +68,8 @@ nav#menu ul li a {
   transition: background-color 0.4s, color 0.4s;
 }
 
-nav#menu ul li a:hover, nav#menu ul li #btn-theme:hover {
+nav#menu ul li a:hover,
+nav#menu ul li #btn-theme:hover {
   background-color: var(--primary-light);
   color: var(--primary);
 }
@@ -70,7 +78,9 @@ main {
   display: grid;
   grid-template-columns: auto 90vw auto;
   gap: 1.25rem;
-  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  max-width: 1536px;
+  margin: 0 auto;
 }
 
 section#sheet {
@@ -119,7 +129,7 @@ div#social a:hover {
   cursor: pointer;
 }
 
-section#detais {
+section#details {
   grid-column: 2;
 }
 
@@ -313,6 +323,31 @@ article#video .video-container {
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto minmax(250px, 400px) minmax(500px, 1fr) auto;
+  }
+
+  section#sheet {
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 62px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  section#sheet h1 {
+    margin: 1.5rem 0;
+  }
+
+  div#social {
+    margin-top: 1.5rem;
+  }
+
+  section#details {
+    grid-column: 3 / 4;
+  }
+
   .skill-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -330,5 +365,29 @@ article#video .video-container {
     aspect-ratio: 1 / 1;
     max-width: 20%;
     max-height: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section#sheet img.photo {
+    width: 300px;
+  }
+
+  section#sheet h1 {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  main {
+    grid-template-columns: auto minmax(250px, 500px) minmax(500px, 1fr) auto;
+  }
+
+  section#sheet {
+    padding-bottom: 2.5rem;
+  }
+
+  section#sheet img.photo {
+    width: 400px;
   }
 }
